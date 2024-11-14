@@ -1,14 +1,16 @@
 {
   "name": "my-website",
   "version": "0.1.0",
+  "homepage": "https://k-tanotra.github.io/KanishkTanotra.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "static" : "next build && next export && touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
