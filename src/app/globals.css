@@ -15,6 +15,12 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html, body {
+  @apply no-scrollbar;
+  height: 100%;
+  margin:0;
+  padding:0;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,4 +36,18 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+}
+
+.bg-custom-image {
+  background-image: url('/background.png');
+  background-position: center; /* Optional: to center the image */
+  background-repeat: repeat; /* Optional: to prevent repeating the image */
 }
