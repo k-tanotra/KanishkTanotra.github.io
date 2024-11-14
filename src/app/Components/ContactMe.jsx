@@ -13,7 +13,7 @@ const ContactMe = () => {
     <div className="p-5 w-[350px] sm:w-[650px] pb-20 ">
       <div className="flex flex-col w-full justify-center items-center">
         <h1 className="text-3xl sm:text-6xl pt-10 pb-5  sm:pb-10 sm:pt-0 font-extrabold bg-clip-text bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neutral-300 via-purple-100 to-stone-200 text-transparent mb-4">
-          Let's Connect
+          Lets Connect
         </h1>
         <h2 className='text-xl font-semibold'>Leave a short message below about the potential project</h2>
         <SendEmail/>
